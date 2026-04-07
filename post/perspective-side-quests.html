@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" property="og:description" content="Fragments from outside the main path - ideas, observations, and quiet experiments."><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Astro v6.1.1"><meta name="theme-color" content="#5540af"><title>Personal Notes: Beyond Work | Marshall Laszlo Toth</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link as="style" rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@200;300;400;500;600;700&display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@200;300;400;500;600;700&display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" crossorigin="anonymous"><script>
+  // This code is inlined in the head to make dark mode instant & blocking.
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+  const isDark = getThemePreference() === "dark";
+  document.documentElement.classList[isDark ? "add" : "remove"]("theme-dark");
+
+  if (typeof localStorage !== "undefined") {
+    // Watch the document element and persist user preference when it changes.
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("theme-dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
+</script><link rel="stylesheet" href="/_astro/Hero.DAQ22E3N.css"></head> <body class="antialiased"> <div class="relative">  <header> <nav class="w-full z-50 top-0 py-3 sm:py-5 absolute no-print"> <div class="container flex items-center justify-between"> <!-- Logo --> <div> <a href="/"> <img src="/_astro/logo.Dr4KW7gJ.svg" class="w-24 lg:w-48" alt="logo"> </a> </div> <!-- Desktop nav --> <div class="hidden lg:block"> <ul class="flex items-center"> <li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#about"> About </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#services"> Services </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#work"> Work </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#contact"> Contact </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li> </ul> </div> <!-- Mobile button --> <div class="block lg:hidden"> <button id="menu-open"> <i class="bx bx-menu text-4xl text-white"></i> </button> </div> </div> </nav> <!-- Overlay --> <div id="mobile-menu" class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"> <div class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"> <button id="menu-close" class="absolute top-0 right-0 mt-4 mr-4"> <img src="/_astro/icon-close.D_ch3SrH.svg" class="h-10 w-auto" alt="close"> </button> <ul class="mt-8 flex flex-col"> <li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#about" data-close> About </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#services" data-close> Services </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#work" data-close> Work </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-scroll="#contact" data-close> Contact </span> </li> </ul> </div> </div> </header> <!-- Interactivity --> <script type="module">const e=document.getElementById("mobile-menu"),o=document.getElementById("menu-open"),c=document.getElementById("menu-close");function s(){e?.classList.remove("opacity-0","pointer-events-none"),e?.classList.add("opacity-100","pointer-events-auto"),document.body.classList.add("overflow-hidden","max-h-screen")}function n(){e?.classList.add("opacity-0","pointer-events-none"),e?.classList.remove("opacity-100","pointer-events-auto"),document.body.classList.remove("overflow-hidden","max-h-screen")}o?.addEventListener("click",s);c?.addEventListener("click",n);document.querySelectorAll("[data-close]").forEach(t=>{t.addEventListener("click",()=>{n()})});</script> <main> <section id="hero" class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url(/_astro/post-notes.TmR8v1Xf.webp)"> <!-- Gradient overlay --> <div class="absolute inset-0 z-20 bg-linear-to-r from-hero-post-gradient-from to-hero-post-gradient-to"></div> <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">  <div class="flex flex-col items-center justify-center lg:flex-row"> <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0"> <h1 class="text-center font-header text-4xl text-white lg:text-left sm:text-5xl xl:text-6xl bg-linear-to-r from-hero-gradient-from to-hero-gradient-to inline-block p-1"> Personal Notes: Beyond Work </h1> <h2 class="text-center font-header text-2xl text-white lg:text-left sm:text-3xl xl:text-4xl  font-extralight italic mt-4 bg-linear-to-r from-hero-gradient-from to-hero-gradient-to p-2"> Fragments from outside the main path - ideas, observations, and quiet experiments. </h2> </div> </div>  </div> </section> <section id="content" class="bg-grey-60"> <div class="container py-16 md:py-20 bg-white"> <article id="perspective-side-quests" class="text-lg"><p>This is not a structured story.<br>It’s a collection of fragments.</p>
+<hr>
+<p>I like building things.<br>Sometimes useful. Sometimes not. Just things that didn’t exist before.</p>
+<hr>
+<p>I learned how to cook soap.<br>Made a charcoal face soap. It worked.</p>
+<hr>
+<p>I built ÉrtékBár, a low-cost POS system.
+Stock, recipes, orders, billing.</p>
+<hr>
+<p>I also built a delivery app for a community-supported kitchen.</p>
+<p>It worked.<br>Then they disappeared.<br>I can’t reach them anymore.</p>
+<p>Systems don’t always fail.
+Sometimes they just vanish.</p>
+<hr>
+<p>I once came across a thread on an Arduino forum where someone tried to stream live video from an ESP device to YouTube.
+Another user offered a paid solution.</p>
+<p>That didn’t sit right with me.</p>
+<p>On a community forum, knowledge should be shared, or at least not hidden behind a price tag so loudly.</p>
+<p>So I rebuilt the problem from scratch.</p>
+<p>The stream worked.
+At around seven frames per second.</p>
+<p>A successful failure. Exactly what the hardware allowed.</p>
+<p>In the end, I shared the solution as open source.</p>
+<hr>
+<p>After university, I used a Karnaugh table exactly once.<br>It was to simplify delivery conditions.</p>
+<p>Years of theory distilled into a single, oddly satisfying moment.</p>
+<p>Knowing where to look is often more valuable than knowing the answer.</p>
+<hr>
+<p>In school, I once built a battery-powered digital clock on a prototyping board.</p>
+<p>It looked suspicious enough that the school thought it might be a bomb.</p>
+<p>The principal got involved.</p>
+<p>I didn’t win the competition.<br>But I got a special award for the show.</p>
+<p>Fair...</p>
+<hr>
+<p>Years later, I found it again.</p>
+<p>I had even designed a small PCB for the display and its driver transistors back then.</p>
+<p>So I rebuilt it into a permanent clock.<br>It still used the same battery.<br>A heavy, black 4.5Ah unit from an old alarm system.<br>It had spent decades on a shelf.
+Still alive.</p>
+<p>Some components age.<br>Some just wait.</p>
+<hr>
+<p>I used another one to build a torch.<br>Buying one would have been easier.<br>But I already had the parts.<br>Sometimes building is not about efficiency.<br>It’s about continuation.</p>
+<hr>
+<p>I’ve rewritten the same idea multiple times.</p>
+<p>Each version felt final.<br>None of them were.</p>
+<hr>
+<p>The strangest constraint I’ve worked with reached something around 10^1851 combinations.</p>
+<p>At that point, you don’t manage data.<br>You navigate a universe.</p>
+<p>The simplest interface often hides the most complicated system behind it.</p>
+<hr>
+<p>I like tools that do one thing well.<br>And systems that know when not to do more.</p>
+<hr>
+<p>I don’t like mushrooms.</p>
+<p>No deeper philosophy here.</p>
+<hr>
+<p>I’ve volunteered in different places over the years. Animal shelters. Community restoration projects. The kind of work where progress is slow, visible, and very real.</p>
+<p>It changes your sense of scale.</p>
+<hr>
+<p>The larger the system, the harder it is to change.<br>Not because it’s strong, but because it’s entangled.</p>
+<hr>
+<p>I want to try hitchhiking across Europe at some point.<br>Not for efficiency. Quite the opposite.<br>To let randomness take control for a while.</p>
+<hr>
+<p>Documentation is something I struggle with.</p>
+<p>Not understanding systems. Not building them.
+But explaining them clearly, consistently, in a way that survives time.</p>
+<p>This portfolio is part of that effort.</p>
+<hr>
+<p>I’ve tried to improve many systems.<br>Some didn’t want to be improved.</p>
+<p>That might be the hardest constraint of all.</p>
+<hr>
+<p>I’ve learned things that don’t fit here.<br>Shibari is one of them. Don’t Google it. Not safe for work.</p>
+<p>Context matters.<br>Consent required.</p>
+<hr>
+<p>I’ve created mods for games like Minecraft and Factorio.</p>
+<p>There’s something satisfying about modifying systems that are already systems.<br>Like adding a new rule to a universe and watching how it adapts.</p>
+<hr>
+<p>Somewhere on the internet, on prog.hu, there’s a question under my name about global variables in Java.</p>
+<p>It’s not a good question.</p>
+<p>It still exists.</p>
+<p>That’s fine.</p>
+<hr>
+<p>As an intern, I once had to explain to a senior colleague why storing raw passwords in a database is a bad idea.</p>
+<p>That conversation alone probably paid for my education.</p>
+<hr>
+<p>During university, I was part of BME-Matrix.</p>
+<p>An event where an entire dorm building became a giant display using its windows. Eighteen floors. Light as pixels.</p>
+<p>We worked on one of the early generations of the system.</p>
+<p>Later, during the Schönherz Qpa competition, we made a “replacement tram for a replacement bus” as a kind of guerrilla action.</p>
+<p>It made sense at the time.</p>
+<p>Some ideas make sense immediately.<br>Others need years before they click.</p>
+<hr>
+<p>I tried archaeology in Germany.<br>Which mostly meant digging and shoveling.<br>The work was interesting.</p>
+<p>The bureaucracy was… also a system.</p>
+<hr>
+<p>I notice patterns. And mistakes.<br>In code. In systems. In everyday situations.<br>Sometimes I point them out.<br>Sometimes I don’t.</p>
+<p>Small inconsistencies tend to point at larger problems.</p>
+<hr>
+<p>Some systems look correct on paper.</p>
+<p>Until Reality disagrees.</p>
+<p>Just because something can be optimized doesn’t mean it should be.</p>
+<hr>
+<p>I like working in teams.</p>
+<p>Not because teams are always efficient, but because they are combinatorial.</p>
+<p>No one invents something truly new alone. We remix. We recombine. Like colors that can’t exist individually, but emerge when mixed.</p>
+<p>A good team doesn’t remove mistakes.<br>It makes them visible sooner.</p>
+<hr>
+<p>I like when things flow.</p>
+<p>Data, materials, ideas.</p>
+<p>When they don’t, something is wrong.</p>
+<hr>
+<p>I still make mistakes.</p>
+<p>Just slightly more interesting ones.</p>
+<hr>
+<p>A good life, for me, is not extreme.</p>
+<p>It’s balanced.</p>
+<p>Some work. Some rest. Some social life. Some time for my own ideas.</p>
+<p>Enough structure to move forward. Enough freedom to not feel trapped.</p>
+<hr>
+<p>My mornings are simple.</p>
+<p>Coffee.<br>One-to-one ratio with milk.<br>Four sugars and a spoon of honey.</p>
+<p>But don’t stir it.<br>I don’t like it sweet.</p>
+<p>Some background noise. A podcast, maybe.<br>It’s a small system that works.</p>
+<hr>
+<p>I’m still figuring things out.</p>
+<p>But at least now I know what kind of questions to ask.</p>
+</article> </div> </section> </main> <footer class="bg-primary"> <div class="container flex flex-col justify-between py-6 sm:flex-row"> <p class="text-center font-body text-white md:text-left">
+© Copyright 2024. All right reserved.
+</p> <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0 "> <a href="https://github.com/tolacika" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-github text-2xl"></i> </a><a href="https://www.linkedin.com/in/tolacika/" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-linkedin-square text-2xl"></i> </a><a href="https://www.facebook.com/marshall.things" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-facebook-square text-2xl"></i> </a><span data-scroll="#contact" class="cursor-pointer px-2 text-white hover:text-yellow"> <i class="bx bx-envelope text-2xl"></i> </span><span data-scroll="#contact" class="cursor-pointer px-2 text-white hover:text-yellow"> <i class="bx bxs-map-pin text-2xl"></i> </span> </div> </div> </footer>  </div> <script type="module">document.addEventListener("click",t=>{if(!(t.target instanceof HTMLElement))return;const e=t.target.closest("[data-scroll]");if(!(e instanceof HTMLElement))return;const n=e.dataset.scroll;if(!n)return;const o=document.querySelector(n);o&&o.scrollIntoView({behavior:"smooth"})});</script> </body> </html>
