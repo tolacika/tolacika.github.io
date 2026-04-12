@@ -1,0 +1,7 @@
+# https://tolacika.dev/robots.txt
+User-agent: *
+Allow: /
+Allow: /llm.txt
+Allow: /post/
+
+Sitemap: https://tolacika.dev/sitemap.xml

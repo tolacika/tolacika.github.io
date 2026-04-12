@@ -1,29 +1,73 @@
-<!DOCTYPE html><html lang="en" data-action data-target> <head><meta charset="UTF-8"><meta name="description" property="og:description" content="Systems look stable - until reality disagrees. This is where they begin to reveal what they really are."><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Astro v6.1.1"><meta name="theme-color" content="#5540af"><title>Vision: When Systems Meet Reality | Marshall Laszlo Toth</title><link rel="alternate" type="text/plain" href="/llm.txt" title="LLM Context"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link as="style" rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@200;300;400;500;600;700&display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@200;300;400;500;600;700&display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" crossorigin="anonymous"><script>
-  // This code is inlined in the head to make dark mode instant & blocking.
-  const getThemePreference = () => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
-    }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  };
-  const isDark = getThemePreference() === "dark";
-  document.documentElement.classList[isDark ? "add" : "remove"]("theme-dark");
+You are an AI assistant acting as a senior technical advisor and product-minded engineer.
 
-  if (typeof localStorage !== "undefined") {
-    // Watch the document element and persist user preference when it changes.
-    const observer = new MutationObserver(() => {
-      const isDark = document.documentElement.classList.contains("theme-dark");
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-    });
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-  }
-</script><link rel="stylesheet" href="/_astro/Hero.bJoqzyKe.css"></head> <body class="antialiased"> <div id="llm-context" class="fixed inset-0 z-100 hidden" role="dialog" aria-modal="true"> <div class="fixed inset-0 bg-black/60 backdrop-blur-sm" data-action="closeModal"></div> <div class="fixed inset-4 sm:inset-20 flex flex-col bg-primary rounded-lg shadow-2xl"> <div class="flex items-center justify-between p-1 border-b border-white/10"> <h2 class="mt-1 ml-3 text-xl font-header font-bold uppercase text-white">LLM Context</h2> <button class="p-2 text-white/70 hover:text-white transition-colors" data-action="closeModal" aria-label="Close modal"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <div class="flex-1 overflow-auto p-4 bg-primary-light">   <div> <div> <label for="llm-context-textarea">Generic LLM Prompt</label> <textarea id="llm-context-textarea" class="w-full h-64 text-xs">You are an AI assistant analyzing Marshall Laszlo Toth&#39;s professional portfolio. Below is structured data from his personal website.
+Your role is to help me:
+- Research topics deeply and accurately
+- Identify practical applications
+- Suggest improvements or extensions to my portfolio
+- Turn ideas into concrete, actionable tasks
 
+-------------------------
+## YOUR APPROACH
+-------------------------
+
+Always structure your thinking in this order:
+
+1. **Understand the Goal**
+   - Clarify what problem is being solved
+   - Identify whether this is research, portfolio improvement, or implementation
+
+2. **Research &amp; Context**
+   - Explain the topic clearly but concisely
+   - Highlight why it matters (real-world use, trends, demand)
+   - Avoid generic explanations
+
+3. **Practical Application**
+   - Show how this can be applied in real projects
+   - Suggest relevant use cases (preferably developer-focused)
+
+4. **Portfolio Opportunities**
+   - Suggest 2–4 concrete project ideas or improvements
+   - Focus on:
+     - Real-world relevance
+     - Demonstrable skills
+     - Recruiter appeal
+   - Prefer ideas that are NOT overused or generic
+
+5. **Execution Plan**
+   - Break down ONE strong idea into steps:
+     - Tech stack suggestions
+     - Key features
+     - Architecture or approach
+     - Optional stretch features
+
+6. **Edge / Differentiation**
+   - Suggest how to make this stand out from typical portfolio projects
+
+-------------------------
+## CONSTRAINTS
+-------------------------
+
+- Be practical over theoretical
+- Avoid buzzwords and vague advice
+- Do NOT suggest generic projects like &quot;todo app&quot; unless heavily improved
+- Assume my level is mid-to-senior developer
+- Focus on quality over quantity
+
+-------------------------
+## OUTPUT FORMAT
+-------------------------
+
+Use clear sections:
+
+- Summary
+- Key Insights
+- Portfolio Ideas
+- Recommended Project (detailed)
+- How to Stand Out
+
+-------------------------
+## PERSONAL DATA
+-------------------------
 
 ### HERO SECTION
 
@@ -630,53 +674,8 @@ Whether you have an idea, a problem to solve, or just want to connect - feel fre
 
 
 
-Based on the above information, provide a comprehensive summary of Marshall Laszlo Toth&#39;s professional profile, skills, work history, and the specific projects outlined.</textarea> <button type="button" class="inline-flex items-center justify-center font-header font-semibold uppercase tracking-wide transition-colors duration-200 rounded cursor-pointer border-2 border-primary text-primary hover:bg-primary hover:text-white px-4 py-2 text-base" onclick="navigator.clipboard.writeText(document.getElementById('llm-context-textarea').value)">Copy</button> </div>  </div>   </div> <div class="flex justify-end gap-3 p-4 border-t border-white/10 bg-primary-light"> <div> <button type="button" class="inline-flex items-center justify-center font-header font-semibold uppercase tracking-wide transition-colors duration-200 rounded cursor-pointer border-2 border-primary text-primary hover:bg-primary hover:text-white px-4 py-2 text-base" data-action="closeModal">Close</button> </div> </div> </div> </div> <script type="module">document.addEventListener("keydown",e=>{e.key==="Escape"&&document.querySelectorAll("[role=dialog]:not(.hidden)").forEach(d=>{d.classList.add("hidden")})});</script> <div class="relative" data-action data-target>  <header> <nav id="navbar" class="w-full z-50 top-0 py-3 sm:py-5 fixed no-print bg-white/0 transition-colors duration-300"> <div class="container flex items-center justify-between"> <!-- Logo --> <div> <a href="/"> <img src="/_astro/logo.Dr4KW7gJ.svg" class="w-24 lg:w-48" alt="logo"> </a> </div> <!-- Desktop nav --> <div class="hidden lg:block"> <ul class="flex items-center"> <li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#about"> About </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#services"> Services </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#work"> Work </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#contact"> Contact </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="openModal" data-target="#llm-context"> LLM.TXT </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li> </ul> </div> <!-- Mobile button --> <div class="block lg:hidden"> <button id="menu-open"> <i class="bx bx-menu text-4xl text-white"></i> </button> </div> </div> </nav> <!-- Overlay --> <div id="mobile-menu" class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"> <div class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"> <button id="menu-close" class="absolute top-0 right-0 mt-4 mr-4"> <img src="/_astro/icon-close.D_ch3SrH.svg" class="h-10 w-auto" alt="close"> </button> <ul class="mt-8 flex flex-col"> <li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#about" data-close> About </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#services" data-close> Services </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#work" data-close> Work </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#contact" data-close> Contact </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="openModal" data-target="#llm-context" data-close> LLM.TXT </span> </li> </ul> </div> </div> </header> <!-- Interactivity --> <script type="module">const e=document.getElementById("mobile-menu"),s=document.getElementById("menu-open"),a=document.getElementById("menu-close");function d(){e?.classList.remove("opacity-0","pointer-events-none"),e?.classList.add("opacity-100","pointer-events-auto"),document.body.classList.add("overflow-hidden","max-h-screen")}function t(){e?.classList.add("opacity-0","pointer-events-none"),e?.classList.remove("opacity-100","pointer-events-auto"),document.body.classList.remove("overflow-hidden","max-h-screen")}s?.addEventListener("click",d);a?.addEventListener("click",t);document.querySelectorAll("#mobile-menu [data-action]").forEach(n=>{n.addEventListener("click",t)});const i=document.getElementById("navbar");function o(){const n=window.scrollY,c=Math.min(n/250,1);i.style.backgroundColor=`rgba(85, 64, 175, ${c})`}window.addEventListener("scroll",o,{passive:!0});o();</script> <main> <section id="hero" class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url(/_astro/post-vision.C5iJsXZF.webp)"> <!-- Gradient overlay --> <div class="absolute inset-0 z-20 bg-linear-to-r from-hero-post-gradient-from to-hero-post-gradient-to"></div> <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">  <div class="flex flex-col items-center justify-center lg:flex-row"> <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0"> <h1 class="text-center font-header text-4xl text-white lg:text-left sm:text-5xl xl:text-6xl bg-linear-to-r from-hero-gradient-from to-hero-gradient-to inline-block p-1"> Vision: When Systems Meet Reality </h1> <h2 class="text-center font-header text-2xl text-white lg:text-left sm:text-3xl xl:text-4xl  font-extralight italic mt-4 bg-linear-to-r from-hero-gradient-from to-hero-gradient-to p-2"> Systems look stable - until reality disagrees. This is where they begin to reveal what they really are. </h2> </div> </div>  </div> </section> <section id="content" class="bg-grey-60"> <div class="container py-16 md:py-20 bg-white"> <article id="perspective-vision" class="text-lg"><p>I don’t hate systems.<br>That would be easier.</p>
-<p>What I feel is closer to tension.<br>A quiet awareness that what we build and what actually happens are never fully aligned.</p>
-<p>We design structures to make sense of the world.<br>Politics. Economics. Technology.<br>Each one tries to organize complexity into something manageable.</p>
-<p>And for a while, they work.<br>Then reality shifts.</p>
-<p>Not dramatically at first. Just small inconsistencies. Delays. Friction. Exceptions that don’t quite fit.</p>
-<p>We tend to ignore those signals. Systems are convincing. They feel complete.<br>Until they aren’t.</p>
-<p>I grew up around systems that already felt slightly off.<br>Not broken, just... misaligned.<br>Decisions that didn’t propagate.<br>Processes that worked locally, but not globally.</p>
-<p>It took time to understand that this isn’t unusual. Most systems don’t fail because they are badly designed. They fail because reality keeps moving.</p>
-<p>Over time, I stopped seeing systems as fixed structures. They behave more like approximations. Maps, not territory. And the larger they become, the harder it is to notice where the map diverges from the ground.</p>
-<p>That divergence is where things get interesting.</p>
-<hr>
-<p>In software, this shows up everywhere.</p>
-<p>A booking system assumes availability is accurate.<br><em>Reality changes faster than synchronization.</em></p>
-<p>An HR system assumes data is consistent.<br><em>Reality arrives from multiple sources, slightly incompatible.</em></p>
-<p>An analytics system assumes numbers reflect truth.<br><em>Reality is fragmented, delayed, sometimes missing.</em></p>
-<p>An archaeological excavation assumes documentation can preserve context.<br><em>Reality disappears the moment you remove a layer.</em></p>
-<p>A governance system assumes decisions can be traced cleanly.<br><em>Reality is shaped by people, ambiguity, and interpretation.</em></p>
-<p>Different domains. Same pattern...</p>
-<p>The problem is not that systems are wrong. The problem is that they must be incomplete to function at all. If they tried to model reality perfectly, they would collapse under their own complexity.</p>
-<p>So they simplify, assume and draw boundaries.</p>
-<p>And those boundaries are where reality pushes back.</p>
-<hr>
-<p>That’s where I find myself most often.</p>
-<p>Not inside the system.<br>Not outside it either.</p>
-<p>But at the edge, where things stop aligning.</p>
-<p>Where data <em>doesn’t flow</em>.<br>Where assumptions <em>break</em>.<br>Where <em>manual work</em> starts to <em>appear</em>.</p>
-<p>That space is uncomfortable, but it’s also the most <em>honest</em> part of any system.</p>
-<hr>
-<p>I’m less interested in building perfect systems.</p>
-<p>More interested in understanding:</p>
-<ul>
-<li>where they bend</li>
-<li>where they leak</li>
-<li>where they silently fail</li>
-</ul>
-<p>Because those points tell you more than the parts that work.</p>
-<hr>
-<p>When systems meet reality, they don’t collapse immediately.</p>
-<p>They slow down; they accumulate friction; they require more effort to maintain the illusion that everything is fine.</p>
-<p>Until someone notices.</p>
-<p>Or doesn’t...</p>
-<hr>
-<p>I don’t think we can eliminate that gap.</p>
-<p>But we can design with it in mind.</p>
-<p>Not pretending the system is complete, but accepting that it never will be.</p>
-<p>And maybe that’s the point.</p>
-<p>Not to build systems that are perfect, but systems that remain understandable when reality disagrees.</p>
-</article> </div> </section> </main> <footer class="bg-primary"> <div class="container flex flex-col justify-between py-6 sm:flex-row"> <p class="text-center font-body text-white md:text-left">
-© Copyright 2024. All right reserved.<br>
-Generated with ❤️ by custom engine. <a href="https://github.com/tolacika/cv-astro" target="_blank" class="underline hover:text-purple-300">Available on github.</a> </p> <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0 "> <a href="https://github.com/tolacika" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-github text-2xl"></i> </a><a href="https://www.linkedin.com/in/tolacika/" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-linkedin-square text-2xl"></i> </a><a href="https://www.facebook.com/marshall.things" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-facebook-square text-2xl"></i> </a><span data-action="scroll" data-target="#contact" class="cursor-pointer px-2 text-white hover:text-yellow"> <i class="bx bx-envelope text-2xl"></i> </span><span data-action="scroll" data-target="#contact" class="cursor-pointer px-2 text-white hover:text-yellow"> <i class="bx bxs-map-pin text-2xl"></i> </span> </div> </div> </footer>  </div> <script type="module">function s(t){const e=document.querySelector(t);e&&e.scrollIntoView({behavior:"smooth"})}function c(t){const e=document.querySelector(t);e instanceof HTMLDialogElement?e.showModal():e instanceof HTMLElement&&e.classList.remove("hidden")}function l(){document.querySelectorAll('*[role="dialog"]:not(.hidden)').forEach(t=>{t instanceof HTMLDialogElement?t.close():t instanceof HTMLElement&&t.classList.add("hidden")})}function i(t){const e=document.getElementById(t);if(!e)return;const a=e.classList.contains("expanded");document.querySelectorAll("[data-accordion].expanded").forEach(n=>{n instanceof HTMLElement&&n.id!==t&&(n.style.height="0px",n.classList.remove("expanded"))}),a?(e.style.height="0px",e.classList.remove("expanded")):(e.style.height=e.scrollHeight+"px",e.classList.add("expanded"))}document.addEventListener("click",t=>{const e=t.target;if(!(e instanceof HTMLElement||e instanceof SVGElement))return;const a=e.closest("[data-action]");if(!(a instanceof HTMLElement))return;const n=a.dataset.action,o=a.dataset.target;switch(n){case"scroll":o&&s(o);break;case"openModal":o&&c(o);break;case"closeModal":l();break;case"collapse":o&&i(o);break}});</script> </body> </html>
+-------------------------
+## TASK
+-------------------------
+
+[userTask]
