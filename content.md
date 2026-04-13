@@ -665,105 +665,120 @@ Where messy business logic meets long-lived systems.
 I’ve spent most of my career working in PHP across monoliths, APIs, and evolving architectures, often in systems that could not be rewritten but had to be improved under real constraints.
 My focus is not just writing PHP, but stabilizing and extending systems where correctness, backward compatibility, and incremental change matter more than ideal architecture.
     - see also: tag:laravel - Laravel; tag:symfony - Symfony; pattern:custom-framework - Custom Framework; tag:api - API
-,
+
+
 #### Custom Framework [custom-framework]
 
 Understanding systems without the safety net.
 Worked extensively in proprietary and legacy frameworks where conventions are implicit and documentation is incomplete, requiring deep system reading and reconstruction.
 This experience shaped my ability to reason about architecture beyond tooling, focusing on data flow, coupling, and hidden assumptions.
     - see also: tag:php - PHP; pattern:legacy-modernization - Legacy Modernization; tag:api - API
-,
+
+
 #### Laravel [laravel]
 
 A structured layer over chaotic domains.
 Used Laravel across multiple production systems, from API backends to full platforms, often as a stabilizing layer in otherwise fragmented architectures.
 I treat Laravel not as an end-state, but as a tool for structuring domain logic, enforcing boundaries, and enabling gradual evolution.
     - see also: tag:php - PHP; tag:api - API; tag:mysql - MySQL; tag:vue - Vue.js
-,
+
+
 #### MySQL [mysql]
 
 Where truth is stored, approximated, and occasionally negotiated.
 Designed and maintained relational data models in systems where consistency, performance, and historical traceability are critical.
 Worked with real-world data inconsistencies, migrations, and synchronization challenges across distributed systems.
     - see also: tag:php - PHP; tag:api - API; tag:graphql - GraphQL; tag:laravel - Laravel
-,
+
+
 #### React [react]
 
 Interfaces for navigating complex systems.
 Built React-based interfaces for operational tools and client-facing systems, focusing on clarity in high-variability workflows.
 Emphasis on translating complex backend processes into understandable user interactions rather than purely visual components.
     - see also: tag:typescript - TypeScript; tag:javascript - JavaScript; tag:api - API
-,
+
+
 #### Neos CMS [neos-cms]
 
 Content systems where structure meets editorial reality.
 Worked with Neos CMS in client projects where content, layout, and business logic intersect in non-trivial ways.
 Focused on adapting structured systems to editorial workflows without breaking consistency or flexibility.
     - see also: tag:php - PHP; pattern:custom-framework - Custom Framework; tag:html - HTML
-,
+
+
 #### JavaScript [javascript]
 
 The glue between intention and interaction.
 Used JavaScript across frontend and integration layers to connect user interaction with system behavior.
 Experience ranges from lightweight enhancements to complex state-driven interfaces.
     - see also: tag:typescript - TypeScript; tag:react - React; tag:vue - Vue.js
-,
+
+
 #### TypeScript [typescript]
 
 Making implicit assumptions visible.
 Adopted TypeScript in larger systems to improve maintainability, especially where multiple developers and services interact.
 Used it as a tool to reduce ambiguity in evolving architectures rather than just for type safety.
     - see also: tag:javascript - JavaScript; tag:react - React; tag:api - API
-,
+
+
 #### HTML [html]
 
 The structural layer everything else depends on.
 Worked extensively with HTML in CMS-driven systems and frontend architectures where structure must remain adaptable.
 Focus on semantic clarity and maintainability in systems where content changes frequently.
     - see also: tag:css - CSS; tag:javascript - JavaScript; tag:neos-cms - Neos CMS
-,
+
+
 #### CSS [css]
 
 Balancing structure, flexibility, and constraint.
 Used CSS to support complex UI systems, often in environments where design systems evolve over time.
 Focus on maintainable styling approaches rather than pixel-perfect isolation.
     - see also: tag:html - HTML; tag:react - React; tag:vue - Vue.js
-,
+
+
 #### API [api]
 
 Where systems agree to understand each other.
 Designed and integrated APIs across multiple domains, including logistics, HR systems, and partner platforms.
 Experienced in handling inconsistent external data, versioning challenges, and long-term contract stability.
     - see also: tag:php - PHP; tag:graphql - GraphQL; tag:laravel - Laravel; tag:aws - AWS
-,
+
+
 #### Symfony [symfony]
 
 Structured foundations in complex environments.
 Worked with Symfony in systems requiring strong architectural boundaries and long-term maintainability.
 Used in contexts where explicit configuration and modularity are preferred over convention.
     - see also: tag:php - PHP; tag:api - API; tag:mysql - MySQL
-,
+
+
 #### AWS [aws]
 
 Infrastructure that scales, until reality interferes.
 Worked with AWS in evolving systems transitioning toward cloud-native architectures.
 Exposure includes deployment, service integration, and understanding trade-offs between scalability and complexity.
     - see also: tag:api - API; tag:azure - Azure; pattern:distributed-systems - Distributed Systems
-,
+
+
 #### Vue.js [vue]
 
 Pragmatic interfaces for fast-moving systems.
 Built Vue.js applications in production systems where rapid iteration and clarity were essential.
 Often used in combination with Laravel to create cohesive full-stack solutions.
     - see also: tag:javascript - JavaScript; tag:laravel - Laravel; tag:html - HTML
-,
+
+
 #### GraphQL [graphql]
 
 Querying systems that don’t naturally align.
 Used GraphQL in distributed environments to provide flexible data access across multiple domains.
 Focus on managing complexity, avoiding over-fetching, and maintaining clarity in schema design.
     - see also: tag:api - API; tag:mysql - MySQL; tag:typescript - TypeScript
-,
+
+
 #### Azure [azure]
 
 Enterprise infrastructure in structured ecosystems.
