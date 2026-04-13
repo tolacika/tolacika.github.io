@@ -101,8 +101,11 @@ Who am I?
 I&#39;m Laszlo Toth, a Software Engineer who builds systems that survive contact with reality.
 
 With over a decade of experience, I design and improve software that connects code, data flows, and physical processes - from Laravel-based platforms and distributed integrations to on-site archaeological documentation and early hardware experiments. I’m particularly drawn to the places where systems bend: where data doesn’t flow cleanly, where reality introduces friction, and where manual work quietly appears.
-skills: PHP / Laravel (90%), HTML / CSS (75%), JavaScript / TypeScript (80%), SQL / NoSQL / GraphQL (70%), React / Vue / Node.js (70%), System Administration (50%), IoT / Embedded / Electrical Engineering (20%) [learning]
-languages: Hungarian: 99%, English: 75%, German: 5% [learning]
+skills: PHP / Laravel (90%); HTML / CSS (75%); JavaScript / TypeScript (80%); SQL / NoSQL / GraphQL (70%); React / Vue / Node.js (70%); System Administration (50%); IoT / Embedded / Electrical Engineering (20%) [learning]
+languages:
+  - Hungarian: Native – I swear in it 10 mins straight without repeating a phrase when the build fails at 3 AM.
+  - English: Fluent – The language I use to explain why my ESP32 is on fire (again).
+  - German: Beginner – Enough to order beer and understand why bureaucracy is the ultimate legacy system.
 
 
 ### WORK EXPERIENCE
@@ -195,24 +198,40 @@ System Patterns I’ve Worked With
 I design and stabilize systems that survive contact with reality. Here are the recurring patterns I have repeatedly built or improved:
 patterns:
   - **Time-sensitive synchronization layers:** Real-time availability, last-minute marketplaces, logistics flows, and irreversible data capture (Risskov, WebShippy, Archbau, Ordio)
-  - **Distributed data transformation pipelines:** Moving information across incompatible domains while preserving integrity (microservices at TechTeamer, multi-country platforms at Risskov, physical-to-digital at Archbau and early furniture operations)
-  - **External dependency orchestration:** Integrating third-party HR systems, hotel partners, e-commerce platforms, and regulatory workflows without letting external volatility break the core system (Ordio, WebShippy, Risskov, Diligent, Archbau)
-  - **Legacy modernization under live constraints:** Gradually replacing or augmenting large PHP monoliths while maintaining auditability, compliance, and delivery continuity (Diligent, NextTuesday)
-  - **Constraint-aware navigation systems:** Guiding users through combinatorial or high-variability spaces (furniture configurator, workforce process interfaces at Ordio)
-  - **Physical-to-digital feedback loops:** Bridging sensors, manual fieldwork, and formal records where reality itself is the source of truth (Archbau excavation, early hardware prototypes, warehouse automation at WebShippy)
+    - see also: experience:#experience-risskov - Risskov Autoferien AG; experience:#experience-webshippy - WebShippy Kft; experience:#experience-archbau - Archbau GmbH; experience:#experience-ordio - Ordio GmbH; tag:api - API; tag:graphql - GraphQL; pattern:data-pipelines - Distributed Data Transformation Pipelines
+,  - **Distributed data transformation pipelines:** Moving information across incompatible domains while preserving integrity (microservices at TechTeamer, multi-country platforms at Risskov, physical-to-digital at Archbau and early furniture operations)
+    - see also: experience:#experience-techteamer-microcredit - TechTeamer Kft &amp; MikroCredit Zrt; experience:#experience-risskov - Risskov Autoferien AG; experience:#experience-archbau - Archbau GmbH; tag:api - API; tag:php - PHP; tag:mysql - MySQL; pattern:external-dependencies - External Dependency Orchestration
+,  - **External dependency orchestration:** Integrating third-party HR systems, hotel partners, e-commerce platforms, and regulatory workflows without letting external volatility break the core system (Ordio, WebShippy, Risskov, Diligent, Archbau)
+    - see also: experience:#experience-ordio - Ordio GmbH; experience:#experience-webshippy - WebShippy Kft; experience:#experience-risskov - Risskov Autoferien AG; experience:#experience-diligent - Diligent Corp.; tag:api - API; pattern:time-sensitive - Time-sensitive Synchronization Layers
+,  - **Legacy modernization under live constraints:** Gradually replacing or augmenting large PHP monoliths while maintaining auditability, compliance, and delivery continuity (Diligent, NextTuesday)
+    - see also: experience:#experience-diligent - Diligent Corp.; experience:#experience-nexttuesday - NextTuesday GmbH; tag:php - PHP; tag:laravel - Laravel; tag:custom-framework - Custom Framework; pattern:data-pipelines - Distributed Data Transformation Pipelines
+,  - **Constraint-aware navigation systems:** Guiding users through combinatorial or high-variability spaces (furniture configurator, workforce process interfaces at Ordio)
+    - see also: experience:#experience-ordio - Ordio GmbH; experience:#experience-ertek-rendszerhaz - Érték-Rendszerház Kft &amp; Wore Hungary Kft; tag:react - React; tag:typescript - TypeScript; tag:vue - Vue.js
+,  - **Physical-to-digital feedback loops:** Bridging sensors, manual fieldwork, and formal records where reality itself is the source of truth (Archbau excavation, early hardware prototypes, warehouse automation at WebShippy)
+    - see also: experience:#experience-archbau - Archbau GmbH; experience:#experience-webshippy - WebShippy Kft; experience:#experience-future-property-trade - Future Property Trade Kft; tag:php - PHP; pattern:time-sensitive - Time-sensitive Synchronization Layers; post:perspective-background - Background: How I Got Here
 
 
 ### CONTACT
 Get in Touch
 Let’s build something, fix something, or explore something
 Whether you have an idea, a problem to solve, or just want to connect - feel free to reach out. I’m always open to meaningful conversations and interesting challenges.
+Let&#39;s connect:
+  - https://github.com/tolacika
+  - https://www.linkedin.com/in/tolacika/
+  - https://www.facebook.com/marshall.things
 
 
 ### FEATURED PROJECTS
 
+Featured Projects  
+A handful of systems, tools, and projects I’ve built or contributed to.
+
 
 
 ### PERSPECTIVE POSTS
+
+Context &amp; Perspective  
+If you’re curious - here’s where I come from, how I think, and a few things beyond the work.
 
 #### POST
 - slug: perspective-background
@@ -717,6 +736,122 @@ If you’ve read this far, thank you. Truly.
 Putting this page together — and living the experiences it tries to describe — took longer than I expected. Every line is a small attempt to turn messy reality into something a little more understandable. The fact that you stayed with it means a lot.
 Whether a particular project, a perspective post, or just a passing detail stuck with you, I’m grateful you took the time.
 I’m still the same person who prefers fixing real friction over polishing surfaces, so if anything here feels worth a conversation, I’d be happy to continue it.
+
+
+### TAGS
+
+#### PHP [php]
+
+Where messy business logic meets long-lived systems.
+I’ve spent most of my career working in PHP across monoliths, APIs, and evolving architectures, often in systems that could not be rewritten but had to be improved under real constraints.
+My focus is not just writing PHP, but stabilizing and extending systems where correctness, backward compatibility, and incremental change matter more than ideal architecture.
+    - see also: tag:laravel - Laravel; tag:symfony - Symfony; pattern:custom-framework - Custom Framework; tag:api - API
+,
+#### Custom Framework [custom-framework]
+
+Understanding systems without the safety net.
+Worked extensively in proprietary and legacy frameworks where conventions are implicit and documentation is incomplete, requiring deep system reading and reconstruction.
+This experience shaped my ability to reason about architecture beyond tooling, focusing on data flow, coupling, and hidden assumptions.
+    - see also: tag:php - PHP; pattern:legacy-modernization - Legacy Modernization; tag:api - API
+,
+#### Laravel [laravel]
+
+A structured layer over chaotic domains.
+Used Laravel across multiple production systems, from API backends to full platforms, often as a stabilizing layer in otherwise fragmented architectures.
+I treat Laravel not as an end-state, but as a tool for structuring domain logic, enforcing boundaries, and enabling gradual evolution.
+    - see also: tag:php - PHP; tag:api - API; tag:mysql - MySQL; tag:vue - Vue.js
+,
+#### MySQL [mysql]
+
+Where truth is stored, approximated, and occasionally negotiated.
+Designed and maintained relational data models in systems where consistency, performance, and historical traceability are critical.
+Worked with real-world data inconsistencies, migrations, and synchronization challenges across distributed systems.
+    - see also: tag:php - PHP; tag:api - API; tag:graphql - GraphQL; tag:laravel - Laravel
+,
+#### React [react]
+
+Interfaces for navigating complex systems.
+Built React-based interfaces for operational tools and client-facing systems, focusing on clarity in high-variability workflows.
+Emphasis on translating complex backend processes into understandable user interactions rather than purely visual components.
+    - see also: tag:typescript - TypeScript; tag:javascript - JavaScript; tag:api - API
+,
+#### Neos CMS [neos-cms]
+
+Content systems where structure meets editorial reality.
+Worked with Neos CMS in client projects where content, layout, and business logic intersect in non-trivial ways.
+Focused on adapting structured systems to editorial workflows without breaking consistency or flexibility.
+    - see also: tag:php - PHP; pattern:custom-framework - Custom Framework; tag:html - HTML
+,
+#### JavaScript [javascript]
+
+The glue between intention and interaction.
+Used JavaScript across frontend and integration layers to connect user interaction with system behavior.
+Experience ranges from lightweight enhancements to complex state-driven interfaces.
+    - see also: tag:typescript - TypeScript; tag:react - React; tag:vue - Vue.js
+,
+#### TypeScript [typescript]
+
+Making implicit assumptions visible.
+Adopted TypeScript in larger systems to improve maintainability, especially where multiple developers and services interact.
+Used it as a tool to reduce ambiguity in evolving architectures rather than just for type safety.
+    - see also: tag:javascript - JavaScript; tag:react - React; tag:api - API
+,
+#### HTML [html]
+
+The structural layer everything else depends on.
+Worked extensively with HTML in CMS-driven systems and frontend architectures where structure must remain adaptable.
+Focus on semantic clarity and maintainability in systems where content changes frequently.
+    - see also: tag:css - CSS; tag:javascript - JavaScript; tag:neos-cms - Neos CMS
+,
+#### CSS [css]
+
+Balancing structure, flexibility, and constraint.
+Used CSS to support complex UI systems, often in environments where design systems evolve over time.
+Focus on maintainable styling approaches rather than pixel-perfect isolation.
+    - see also: tag:html - HTML; tag:react - React; tag:vue - Vue.js
+,
+#### API [api]
+
+Where systems agree to understand each other.
+Designed and integrated APIs across multiple domains, including logistics, HR systems, and partner platforms.
+Experienced in handling inconsistent external data, versioning challenges, and long-term contract stability.
+    - see also: tag:php - PHP; tag:graphql - GraphQL; tag:laravel - Laravel; tag:aws - AWS
+,
+#### Symfony [symfony]
+
+Structured foundations in complex environments.
+Worked with Symfony in systems requiring strong architectural boundaries and long-term maintainability.
+Used in contexts where explicit configuration and modularity are preferred over convention.
+    - see also: tag:php - PHP; tag:api - API; tag:mysql - MySQL
+,
+#### AWS [aws]
+
+Infrastructure that scales, until reality interferes.
+Worked with AWS in evolving systems transitioning toward cloud-native architectures.
+Exposure includes deployment, service integration, and understanding trade-offs between scalability and complexity.
+    - see also: tag:api - API; tag:azure - Azure; pattern:distributed-systems - Distributed Systems
+,
+#### Vue.js [vue]
+
+Pragmatic interfaces for fast-moving systems.
+Built Vue.js applications in production systems where rapid iteration and clarity were essential.
+Often used in combination with Laravel to create cohesive full-stack solutions.
+    - see also: tag:javascript - JavaScript; tag:laravel - Laravel; tag:html - HTML
+,
+#### GraphQL [graphql]
+
+Querying systems that don’t naturally align.
+Used GraphQL in distributed environments to provide flexible data access across multiple domains.
+Focus on managing complexity, avoiding over-fetching, and maintaining clarity in schema design.
+    - see also: tag:api - API; tag:mysql - MySQL; tag:typescript - TypeScript
+,
+#### Azure [azure]
+
+Enterprise infrastructure in structured ecosystems.
+Worked with Azure-based systems in multi-country and enterprise environments.
+Exposure includes deployment, service integration, and operating within predefined infrastructure constraints.
+    - see also: tag:api - API; tag:aws - AWS; pattern:distributed-systems - Distributed Systems; pattern:cloud - Cloud
+
 
 
 -------------------------

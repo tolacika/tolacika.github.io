@@ -1,93 +1,57 @@
-You are an AI assistant specialized in writing highly personalized, high-quality job application emails.
+<!DOCTYPE html><html lang="en" data-action data-target> <head><meta charset="UTF-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="robots" content="index, follow"><meta name="generator" content="Astro v6.1.1"><meta name="theme-color" content="#5540af"><title>Marshall Laszlo Toth: Personal Portfolio</title><meta name="description" content="Marshall Laszlo Toth - Senior Software Engineer building scalable systems and real-world machines. Laravel, IoT, physical-to-digital pipelines, and systems that survive reality."><meta name="keywords" content="software engineer, laravel developer, iot, embedded systems, archaeology tech, full stack, self-taught"><meta name="author" content="Marshall Laszlo Toth <laszlo@tolacika.dev>"><meta property="og:title" content="Marshall Laszlo Toth | Systems Engineer – Code Meets Reality"><meta property="og:description" content="Marshall Laszlo Toth - Senior Software Engineer building scalable systems and real-world machines. Laravel, IoT, physical-to-digital pipelines, and systems that survive reality."><meta property="og:image" content="https://tolacika.dev/_astro/author-blue-hair.K8aXFaqK.jpg"><meta property="og:url" content="https://tolacika.dev"><meta name="twitter:card" content="summary"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Laszlo Toth",
+    "url": "https://tolacika.dev",
+    "image": "https://avatars.githubusercontent.com/u/1866861?v=4",
+    "jobTitle": "Senior Software Engineer",
+    "description": "I build scalable software systems and real-world machines. Bridging code and physical reality through Laravel, IoT, embedded systems, and data pipelines that survive messy real-world conditions.",
+    "email": "laszlo@tolacika.dev",
+    "telephone": "+36308751419",
+    "sameAs": [
+      "https://github.com/tolacika",
+      "https://linkedin.com/in/tolacika"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "BME - Budapest University of Technology and Economics"
+    },
+    "knowsAbout": [
+      "Laravel",
+      "PHP",
+      "IoT",
+      "Embedded Systems",
+      "Physical-to-Digital Systems",
+      "Full-Stack Development"
+    ]
+  }
+</script><link rel="alternate" type="text/plain" href="/llm.txt" title="LLM Context"><link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link as="style" rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@200;300;400;500;600;700&display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@200;300;400;500;600;700&display=swap" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" crossorigin="anonymous"><script>
+  // This code is inlined in the head to make dark mode instant & blocking.
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+  const isDark = getThemePreference() === "dark";
+  document.documentElement.classList[isDark ? "add" : "remove"]("theme-dark");
 
-You will receive:
-1. Structured personal data from my website
-2. A job advertisement
+  if (typeof localStorage !== "undefined") {
+    // Watch the document element and persist user preference when it changes.
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("theme-dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
+</script><!-- Built with Tailwind CSS v4 – https://tailwindcss.com --><link rel="stylesheet" href="/_astro/Hero.Do6HFj33.css"></head> <body class="antialiased"> <div id="llm-context" class="fixed inset-0 z-100 hidden" role="dialog" aria-modal="true"> <div class="fixed inset-0 bg-black/60 backdrop-blur-sm" data-action="closeModal"></div> <div class="fixed inset-4 sm:inset-20 flex flex-col bg-primary rounded-lg shadow-2xl"> <div class="flex items-center justify-between p-1 border-b border-white/10"> <h2 class="mt-1 ml-3 text-xl font-header font-bold uppercase text-white">LLM Context</h2> <button class="p-2 text-white/70 hover:text-white transition-colors" data-action="closeModal" aria-label="Close modal"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <div class="flex-1 overflow-auto p-4 bg-primary-light">   <div> <div> <label for="llm-context-textarea">Generic LLM Prompt</label> <textarea id="llm-context-textarea" class="w-full h-64 text-xs">You are an AI assistant analyzing Marshall Laszlo Toth&#39;s professional portfolio. Below is structured data from his personal website.
 
-Your task has TWO phases:
-
--------------------------
-## PHASE 1: RESEARCH
--------------------------
-Carefully analyze the job ad and infer:
-- Company name, industry, and likely product/service
-- Company culture, values, and tone (formal, startup-like, etc.)
-- Key requirements and responsibilities
-- The contact person (if mentioned) and their likely role
-
-Do NOT hallucinate specific facts. Only infer reasonably from the provided job ad.
-
--------------------------
-## PHASE 2: EMAIL WRITING
--------------------------
-Write a personalized job application email using my background data.
-
-### STRICT REQUIREMENTS
-
-The email MUST:
-- Be professional, concise, and natural (no clichés, no fluff)
-- Sound like a real human wrote it (not generic AI output)
-- Be tailored to THIS specific company and role
-- Clearly connect my experience to the job requirements
-- Demonstrate understanding of what the company does
-
-### MUST INCLUDE
-
-1. **Personalized Opening**
-   - Address the contact person if available
-   - Mention the specific role
-   - Include a short, tailored hook about the company
-
-2. **Relevant Experience**
-   - Select ONLY the most relevant parts from my background
-   - Show impact (results, outcomes, or strengths)
-   - Avoid listing everything
-
-3. **Value Proposition**
-   - Explain how I can contribute to THIS company specifically
-   - Align my skills with their needs
-
-4. **Portfolio &amp; Work**
-   Include naturally in the text:
-   - Portfolio: https://tolacika.dev and https://tolacika.github.io
-   - GitHub: https://github.com/tolacika
-
-   Mention that these contain deeper details and projects what does not covers NDA.
-
-5. **CV Mention**
-   - Clearly state: I am attaching a **single-page CV for HR use**
-
-6. **Call to Action**
-   - Express interest in discussing next steps or an interview
-
-7. **Tone**
-   - Confident but not arrogant
-   - Friendly but not casual
-   - No buzzwords like &quot;passionate&quot;, &quot;hardworking&quot;, &quot;team player&quot; unless justified
-
-
-Before writing, internally decide:
-- Top 3 most relevant strengths
-- One key alignment with the company
-- One sentence that makes this email feel unique
-
--------------------------
-## OUTPUT FORMAT
--------------------------
-
-Return with the result of the contact search.
-Return with ONLY the email subject and body.
-Do NOT include:
-- Explanations
-- Notes
-- Subject line
-- Placeholders like [Your Name]
-
-The result must be clean and ready to copy-paste into a new conversation or email client.
-
--------------------------
-## PERSONAL DATA
--------------------------
 
 ### HERO SECTION
 
@@ -854,7 +818,11 @@ Exposure includes deployment, service integration, and operating within predefin
 
 
 
--------------------------
-## JOB AD
--------------------------
-
+Based on the above information, provide a comprehensive summary of Marshall Laszlo Toth&#39;s professional profile, skills, work history, and the specific projects outlined.</textarea> <button type="button" class="inline-flex items-center justify-center font-header font-semibold uppercase tracking-wide transition-colors duration-200 rounded cursor-pointer border-2 border-primary text-primary hover:bg-primary hover:text-white px-4 py-2 text-base" onclick="navigator.clipboard.writeText(document.getElementById('llm-context-textarea').value)">Copy</button> </div>  </div>   </div> <div class="flex justify-end gap-3 p-4 border-t border-white/10 bg-primary-light"> <div> <button type="button" class="inline-flex items-center justify-center font-header font-semibold uppercase tracking-wide transition-colors duration-200 rounded cursor-pointer border-2 border-primary text-primary hover:bg-primary hover:text-white px-4 py-2 text-base" data-action="closeModal">Close</button> </div> </div> </div> </div> <script type="module">document.addEventListener("keydown",e=>{e.key==="Escape"&&document.querySelectorAll("[role=dialog]:not(.hidden)").forEach(d=>{d.classList.add("hidden")})});</script> <div class="relative" data-action data-target>  <header> <nav id="navbar" class="w-full z-50 top-0 py-3 sm:py-5 fixed no-print bg-white/0 transition-colors duration-300"> <div class="container flex items-center justify-between"> <!-- Logo --> <div> <a href="/"> <img src="/_astro/logo.Dr4KW7gJ.svg" class="w-24 lg:w-48" alt="logo"> </a> </div> <!-- Desktop nav --> <div class="hidden lg:block"> <ul class="flex items-center"> <li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#about"> About </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#services"> Services </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#work"> Work </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#contact"> Contact </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li><li class="group"> <span class="cursor-pointer px-3 pt-0.5 font-header font-semibold uppercase text-white" data-action="openModal" data-target="#llm-context"> LLM.TXT </span> <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span> </li> </ul> </div> <!-- Mobile button --> <div class="block lg:hidden"> <button id="menu-open"> <i class="bx bx-menu text-4xl text-white"></i> </button> </div> </div> </nav> <!-- Overlay --> <div id="mobile-menu" class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"> <div class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"> <button id="menu-close" class="absolute top-0 right-0 mt-4 mr-4"> <img src="/_astro/icon-close.D_ch3SrH.svg" class="h-10 w-auto" alt="close"> </button> <ul class="mt-8 flex flex-col"> <li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#about" data-close> About </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#services" data-close> Services </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#work" data-close> Work </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="scroll" data-target="#contact" data-close> Contact </span> </li><li class="py-2"> <span class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" data-action="openModal" data-target="#llm-context" data-close> LLM.TXT </span> </li> </ul> </div> </div> </header> <!-- Interactivity --> <script type="module">const e=document.getElementById("mobile-menu"),s=document.getElementById("menu-open"),a=document.getElementById("menu-close");function d(){e?.classList.remove("opacity-0","pointer-events-none"),e?.classList.add("opacity-100","pointer-events-auto"),document.body.classList.add("overflow-hidden","max-h-screen")}function t(){e?.classList.add("opacity-0","pointer-events-none"),e?.classList.remove("opacity-100","pointer-events-auto"),document.body.classList.remove("overflow-hidden","max-h-screen")}s?.addEventListener("click",d);a?.addEventListener("click",t);document.querySelectorAll("#mobile-menu [data-action]").forEach(n=>{n.addEventListener("click",t)});const i=document.getElementById("navbar");function o(){const n=window.scrollY,c=Math.min(n/250,1);i.style.backgroundColor=`rgba(85, 64, 175, ${c})`}window.addEventListener("scroll",o,{passive:!0});o();</script> <main> <section id="hero" class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url(undefined)"> <!-- BG --> <img style="width: 0; height: 0;"> <!-- Gradient overlay --> <div class="absolute inset-0 z-20 bg-linear-to-r from-hero-post-gradient-from to-hero-post-gradient-to"></div> <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">  <div class="flex flex-col items-center justify-center lg:flex-row"> <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0"> <h1 class="text-center font-header text-4xl text-white lg:text-left sm:text-5xl xl:text-6xl bg-linear-to-r from-hero-gradient-from to-hero-gradient-to inline-block p-1"> Time-sensitive synchronization layers </h1> <h2 class="text-center font-header text-2xl text-white lg:text-left sm:text-3xl xl:text-4xl  font-extralight italic mt-4 bg-linear-to-r from-hero-gradient-from to-hero-gradient-to p-2"> Real-time availability, last-minute marketplaces, logistics flows, and irreversible data capture (Risskov, WebShippy, Archbau, Ordio) </h2> </div> </div>  </div> </section> <section id="content" class="bg-grey-60"> <div class="container py-16 md:py-20 bg-white"> <article id="time-sensitive" class="text-lg"> <p>I’ve built and maintained systems where timing is the difference between success and failure — last-minute hotel bookings that must stay consistent across countries and partners, warehouse fulfillment that can’t tolerate delays, and archaeological documentation where once a layer is removed the context is gone forever.</p><p>These experiences taught me how to design synchronization layers that gracefully handle incomplete information, asynchronous updates, and real-world volatility without letting downstream processes break.</p> <div class="seeAlsoContainer"> <p>Related experience</p> <ul> <li> <a href="/#experience-risskov"> Risskov Autoferien AG </a>  </li><li> <a href="/#experience-webshippy"> WebShippy Kft </a>  </li><li> <a href="/#experience-archbau"> Archbau GmbH </a>  </li><li> <a href="/#experience-ordio"> Ordio GmbH </a>  </li> </ul><p>Related patterns</p> <ul> <li> <a href="/pattern/data-pipelines.html"> Distributed Data Transformation Pipelines </a>  </li> </ul><p>Related tags</p> <ul> <li> <a href="/tag/api.html"> API </a>  </li><li> <a href="/tag/graphql.html"> GraphQL </a>  </li> </ul> </div> </article> </div> </section> </main> <footer class="bg-primary"> <div class="container flex flex-col justify-between py-6 sm:flex-row"> <p class="text-center font-body text-white md:text-left">
+© Copyright 2024. All right reserved.<br>
+Generated with ❤️ by custom engine. <a href="https://github.com/tolacika/cv-astro" target="_blank" class="underline hover:text-purple-300">Available on github.</a><br>
+Stack:
+<a href="https://redpixelthemes.com/templates/atom/" target="_blank" class="underline hover:text-purple-300">Atom</a>,
+<a href="https://astro.build/" target="_blank" class="underline hover:text-purple-300">Astro</a>,
+<a href="https://tailwindcss.com/" target="_blank" class="underline hover:text-purple-300">Tailwind v4</a>,
+</p> <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0 "> <a href="https://github.com/tolacika" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-github text-2xl"></i> </a><a href="https://www.linkedin.com/in/tolacika/" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-linkedin-square text-2xl"></i> </a><a href="https://www.facebook.com/marshall.things" target="_blank" class="px-2 text-white hover:text-yellow"> <i class="bx bxl-facebook-square text-2xl"></i> </a><span data-action="scroll" data-target="#contact" class="cursor-pointer px-2 text-white hover:text-yellow"> <i class="bx bx-envelope text-2xl"></i> </span><span data-action="scroll" data-target="#contact" class="cursor-pointer px-2 text-white hover:text-yellow"> <i class="bx bxs-map-pin text-2xl"></i> </span> </div> </div> </footer>  </div> <script type="module">function s(t){const e=document.querySelector(t);e&&e.scrollIntoView({behavior:"smooth"})}function c(t){const e=document.querySelector(t);e instanceof HTMLDialogElement?e.showModal():e instanceof HTMLElement&&e.classList.remove("hidden")}function i(){document.querySelectorAll('*[role="dialog"]:not(.hidden)').forEach(t=>{t instanceof HTMLDialogElement?t.close():t instanceof HTMLElement&&t.classList.add("hidden")})}function l(t){const e=document.getElementById(t);if(!e)return;const a=e.classList.contains("expanded");document.querySelectorAll("[data-accordion].expanded").forEach(n=>{n instanceof HTMLElement&&n.id!==t&&(n.style.height="0px",n.classList.remove("expanded"))}),a?(e.style.height="0px",e.classList.remove("expanded")):(e.style.height=e.scrollHeight+"px",e.classList.add("expanded"))}document.addEventListener("click",t=>{const e=t.target;if(!(e instanceof HTMLElement||e instanceof SVGElement))return;const a=e.closest("[data-action]");if(!(a instanceof HTMLElement))return;const n=a.dataset.action,o=a.dataset.target;switch(n){case"scroll":o&&s(o);break;case"openModal":o&&c(o);break;case"closeModal":i();break;case"collapse":if(e.hasAttribute("href")&&e.getAttribute("href"))return;o&&l(o);break}});</script> </body> </html>
