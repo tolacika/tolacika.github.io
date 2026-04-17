@@ -3,5 +3,7 @@ User-agent: *
 Allow: /
 Allow: /llm.txt
 Allow: /post/
+Allow: /tag/
 
 Sitemap: https://tolacika.dev/sitemap.xml
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
