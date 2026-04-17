@@ -276,13 +276,29 @@ The same mindset that drives the paid work also fuels my personal projects. Thes
 
 #### POST
 - wip: yes
-- draft: yes
+- draft: no
 - slug: esp-cam-live-streaming
 - title: Failed Successfully: ESP32-CAM Live Streaming
-- teaser: An experiment pushing an ESP32-CAM to stream live video to YouTube/Twitch and other platforms: achieving a rock-solid 7 fps before hardware limits declared victory. Sometimes the system doesn’t snap, it gracefully reveals its true constraints. Sharing the &quot;successful failure&quot; openly turned a hardware limitation into usable community knowledge.
+- teaser: An experiment pushing an ESP32-CAM to stream live video to YouTube/Twitch and other platforms: achieving a rock-solid 7 fps before hardware limits declared victory. Sometimes the system doesn&#39;t snap, it gracefully reveals its true constraints. Sharing the &quot;successful failure&quot; openly turned a hardware limitation into usable community knowledge.
 - date: 2026-04-16 10:00:00
-- cta: Coming soon
-
+- cta: null
+- content: |
+  I once came across a thread on the Arduino forum where someone was trying to stream live video from an ESP32-CAM directly to YouTube. Another user offered a paid solution.
+  
+  That didn&#39;t sit right with me. On a community forum, knowledge should be shared freely, or at least not locked behind a price tag. So I decided to rebuild the problem from scratch.
+  
+  I started with the official `esp32-camera` component and experimented with different approaches to push the stream out. After many late nights, debugging sessions, and learning the hard limits of the hardware (memory, CPU, Wi-Fi bandwidth, and the camera&#39;s own constraints), I got it working.
+  
+  The stream ran.  
+  At a rock-solid **7 frames per second**.
+  
+  It wasn&#39;t beautiful. It wasn&#39;t smooth. It certainly wasn&#39;t “HD live streaming” in any modern sense. But it worked! Exactly as much as the hardware was willing to give. The ESP32-CAM showed me its true boundaries without snapping. No magic library saved the day; just careful, low-level work and acceptance of reality.
+  
+  In the end, I open-sourced the experiment (including the code that got me to those glorious 7 fps) so others wouldn&#39;t have to start from zero or pay for basic knowledge.
+  
+  This is a classic **successful failure** in my book. The project didn&#39;t deliver what I initially hoped for, but it taught me far more about **time-sensitive synchronization**, **physical-to-digital feedback loops**, and the honest constraints of embedded systems than any smooth success ever could.
+  
+  I...
 
 
 ---
@@ -307,7 +323,7 @@ The same mindset that drives the paid work also fuels my personal projects. Thes
 - draft: no
 - slug: laravel-cron-bundle
 - title: Retrospective: Laravel Cron Bundle
-- teaser: A 2017 open-source package that replaced Laravel’s static scheduler with a database-driven, auditable cron manager + Supervisor support. Even infrastructure code must survive dynamic production reality without relying on fragile server crontabs.
+- teaser: A 2017 open-source package that replaced Laravel&#39;s static scheduler with a database-driven, auditable cron manager + Supervisor support. Even infrastructure code must survive dynamic production reality without relying on fragile server crontabs.
 - date: 2026-04-16 14:00:00
 - cta: null
 - content: |
@@ -335,7 +351,7 @@ The same mindset that drives the paid work also fuels my personal projects. Thes
 - draft: yes
 - slug: model-railway-experiments
 - title: Model Railway Experiments
-- teaser: A collection of experiments including a simulation framework, NMRA DCC protocol port to ESP32, and control logic for model railways — turning a miniature physical world into a real-time, synchronized digital system. Model railways are a perfect microcosm of larger systems: timing is everything, physical movement can’t be buffered easily, and reality (track conditions, mechanical delays, signal interference) pushes back constantly. These experiments sharpened my intuition for irreversible, real-time flows.
+- teaser: A collection of experiments including a simulation framework, NMRA DCC protocol port to ESP32, and control logic for model railways — turning a miniature physical world into a real-time, synchronized digital system. Model railways are a perfect microcosm of larger systems: timing is everything, physical movement can&#39;t be buffered easily, and reality (track conditions, mechanical delays, signal interference) pushes back constantly. These experiments sharpened my intuition for irreversible, real-time flows.
 - date: 2026-04-16 10:00:00
 - cta: Coming soon
 
@@ -349,7 +365,7 @@ The same mindset that drives the paid work also fuels my personal projects. Thes
 - draft: yes
 - slug: static-portfolio-engine
 - title: Static Portfolio Engine
-- teaser: A fully static, open-source portfolio system built with Astro, Tailwind v4, Content Collections and an LLM-first architecture. Turning my own messy thinking into a maintainable digital artifact that doesn’t snap under future changes.
+- teaser: A fully static, open-source portfolio system built with Astro, Tailwind v4, Content Collections and an LLM-first architecture. Turning my own messy thinking into a maintainable digital artifact that doesn&#39;t snap under future changes.
 - date: 2026-04-16 12:00:00
 - cta: Coming soon
 
