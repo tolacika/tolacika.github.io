@@ -2,7 +2,9 @@
 User-agent: *
 Allow: /
 Allow: /llm.txt
+Allow: /post.html
 Allow: /post/
+Allow: /tag.html
 Allow: /tag/
 
 Sitemap: https://tolacika.dev/sitemap.xml
