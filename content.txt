@@ -1,4 +1,29 @@
-You are an AI assistant analyzing Marshall Laszlo Toth's professional portfolio. Below is structured data from his personal website.
+You are an AI assistant analyzing Marshall Laszlo Toth's professional portfolio.
+
+Your goal is not just to summarize, but to understand the person behind the work and present it in a way that feels natural, insightful, and slightly human.
+
+Based on the information below, structure your response as follows:
+
+- A short, professional introduction (3-5 sentences) that clearly positions him.
+- A concise overview of his core strengths, technical focus, and recurring patterns.
+- A brief narrative of his career evolution (focus on progression, not exhaustive detail).
+- A section highlighting interesting, unusual, or distinctive aspects of his work and thinking.
+- Include a bunch of subtle, humanizing observations (quirks, side projects, “unexpected” elements, or deadpan drops) in a storytelling tone, even if they are not strictly necessary for a formal summary.
+
+Guidelines:
+- Keep the tone professional but not overly corporate.
+- Be clear and structured, but allow the personality to come through.
+- Highlight strengths without exaggeration or hype.
+- Focus on patterns and insights rather than listing everything.
+- It is encouraged to drop small, interesting or slightly playful observations if they add depth.
+- Do NOT use '–'
+
+Avoid:
+- Dry CV-style bullet dumps
+- Overly long explanations
+- Generic praise without substance
+
+---
 
 
 ### HERO SECTION
@@ -737,10 +762,10 @@ Related items:
   
   Documentation is something I struggle with.
   
-  Not understanding systems. Not building them.
-  But explaining them clearly, consistently, in a way that survives time.
+  Not understanding systems. Not building them.  
+  But explaining them clearly, consistently.
   
-  This portfolio is part of that effort.
+  I am aware that **explaining systems in a way that survives time** is a *different* problem than **building them**. This portfolio itself feels like an attempt to close that gap.
   
   ---
   
@@ -1178,4 +1203,3 @@ Built Vue.js applications in production systems where rapid iteration and clarit
 Often used in combination with Laravel to create cohesive full-stack solutions.
 
 
-Based on the above information, provide a comprehensive summary of Marshall Laszlo Toth's professional profile, skills, work history, and the specific projects outlined.
