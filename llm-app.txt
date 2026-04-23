@@ -995,277 +995,106 @@ Let's connect:
 
 
 ### TAGS - label [slug]
-
 #### API Design [api]
-Related items:
-- Patterns: external-dependencies; time-sensitive; data-pipelines
-- Tags: php; graphql; laravel; typescript
-- External Links: [Wikipedia - API](https://en.wikipedia.org/wiki/API); [REST API Tutorial](https://restfulapi.net/)
-
 Where systems agree to understand each other.
 
-Designed and integrated APIs across multiple domains, including logistics, HR systems, and partner platforms.
-Experienced in handling inconsistent external data, versioning challenges, and long-term contract stability.
 
 #### AWS [aws]
-Related items:
-- Patterns: external-dependencies; legacy-modernization
-- Tags: api; system-administration
-- External Links: [Wikipedia - AWS](https://en.wikipedia.org/wiki/Amazon_Web_Services); [AWS Documentation](https://docs.aws.amazon.com/)
-
 Infrastructure that scales, until reality interferes.
 
-Worked with AWS in evolving systems transitioning toward cloud-native architectures.
-Exposure includes deployment, service integration, and understanding trade-offs between scalability and complexity.
 
 #### Azure [azure]
-Related items:
-- Patterns: external-dependencies; legacy-modernization
-- Tags: api; system-administration
-- External Links: [Wikipedia - Microsoft Azure](https://en.wikipedia.org/wiki/Microsoft_Azure); [Azure Documentation](https://learn.microsoft.com/en-us/azure/)
-
 Enterprise infrastructure in structured ecosystems.
 
-Worked with Azure-based systems in multi-country and enterprise environments.
-Exposure includes deployment, service integration, and operating within predefined infrastructure constraints.
 
 #### CSS [css]
-Related items:
-- Patterns: navigation
-- Tags: html; react; vue
-- External Links: [Wikipedia - CSS](https://en.wikipedia.org/wiki/CSS); [MDN CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
 Balancing structure, flexibility, and constraint.
 
-Used CSS to support complex UI systems, often in environments where design systems evolve over time.
-Focus on maintainable styling approaches rather than pixel-perfect isolation.
 
 #### Custom Frameworks [custom-framework]
-Related items:
-- Patterns: legacy-modernization; data-pipelines
-- Tags: php; api
-- External Links: [Wikipedia - Web Framework](https://en.wikipedia.org/wiki/Web_framework)
-
 Understanding systems without the safety net.
 
-Worked extensively in proprietary and legacy frameworks where conventions are implicit and documentation is incomplete, requiring deep system reading and reconstruction.
-This experience shaped my ability to reason about architecture beyond tooling, focusing on data flow, coupling, and hidden assumptions.
 
 #### Data Transformation Pipelines [data-pipelines]
-Related items:
-- Tags: api; php; mysql
-- External Links: [Wikipedia - Data Pipeline](https://en.wikipedia.org/wiki/Data_pipeline)
-
 Moving information across incompatible domains while preserving integrity.
 
-From real-time loan lifecycles in a microservice fintech platform to transforming raw excavation measurements into structured archaeological records, I've repeatedly designed pipelines that move and reshape data across domains while keeping integrity, auditability, and traceability intact.
-The pattern shows up whenever incompatible systems must talk: HR data from Workday into workforce platforms, multi-country availability across Azure, or physical fieldwork into formal records.
 
 #### Embedded [embedded]
-Related items:
-- Patterns: physical-to-digital; time-sensitive
-- Tags: iot
-- External Links: [Wikipedia - Embedded System](https://en.wikipedia.org/wiki/Embedded_system)
-
 Code that runs on hardware, not in the cloud.
 
-Written firmware and low-level code for microcontrollers and dedicated hardware.
-Working with constraints where every byte and cycle matters, and where bugs have physical consequences.
 
 #### External Dependency Orchestration [external-dependencies]
-Related items:
-- Patterns: time-sensitive
-- Tags: api
-- External Links: [Wikipedia - Dependency (Computer Science)](https://en.wikipedia.org/wiki/Dependency_(computer_science))
-
 Integrating third-party systems without letting external volatility break the core system.
 
-Whether it was Workday HR imports at Ordio, hotel partner availability at Risskov, or regulatory identity verification at TechTeamer, I focused on building orchestration layers that isolate external volatility so the core system stays stable and observable.
-The real skill is making dependencies explicit, recoverable, and auditable instead of letting them silently corrupt internal state.
 
 #### GraphQL [graphql]
-Related items:
-- Patterns: data-pipelines; external-dependencies
-- Tags: api; typescript
-- External Links: [Wikipedia - GraphQL](https://en.wikipedia.org/wiki/GraphQL); [GraphQL Official](https://graphql.org/)
-
 Querying systems that don't naturally align.
 
-Used GraphQL in distributed environments to provide flexible data access across multiple domains.
-Focus on managing complexity, avoiding over-fetching, and maintaining clarity in schema design.
 
 #### HTML [html]
-Related items:
-- Patterns: navigation
-- Tags: css; javascript
-- External Links: [Wikipedia - HTML](https://en.wikipedia.org/wiki/HTML); [MDN HTML Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
-
 The structural layer everything else depends on.
 
-Worked extensively with HTML in CMS-driven systems and frontend architectures where structure must remain adaptable.
-Focus on semantic clarity and maintainability in systems where content changes frequently.
 
 #### IoT [iot]
-Related items:
-- Patterns: physical-to-digital; time-sensitive
-- Tags: embedded; api
-- External Links: [Wikipedia - IoT](https://en.wikipedia.org/wiki/Internet_of_things)
-
 Bridging code and physical processes.
 
-Built systems connecting digital logic to physical action, from sensor data to automated responses.
-Experience with microcontrollers, protocols, and the challenges of making code interact with the unpredictable real world.
 
 #### JavaScript [javascript]
-Related items:
-- Patterns: navigation
-- Tags: typescript; html
-- External Links: [Wikipedia - JavaScript](https://en.wikipedia.org/wiki/JavaScript); [MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
 The glue between intention and interaction.
 
-Used JavaScript across frontend and integration layers to connect user interaction with system behavior.
-Experience ranges from lightweight enhancements to complex state-driven interfaces.
 
 #### Laravel [laravel]
-Related items:
-- Patterns: legacy-modernization; external-dependencies
-- Tags: php; mysql; vue
-- External Links: [Wikipedia - Laravel](https://en.wikipedia.org/wiki/Laravel); [Laravel Docs](https://laravel.com/docs)
-
 A structured layer over chaotic domains.
 
-Used Laravel across multiple production systems, from API backends to full platforms, often as a stabilizing layer in otherwise fragmented architectures.
-I treat Laravel not as an end-state, but as a tool for structuring domain logic, enforcing boundaries, and enabling gradual evolution.
 
 #### Legacy Modernization [legacy-modernization]
-Related items:
-- Tags: php; custom-framework
-- External Links: [Wikipedia - Legacy System](https://en.wikipedia.org/wiki/Legacy_system)
-
 Gradually replacing or augmenting large systems while maintaining auditability and compliance.
 
-At Diligent and NextTuesday I worked inside large, business-critical PHP systems that could not be stopped. The challenge was to modernize incrementally (introducing TypeScript services, cloud patterns, and clearer boundaries) without ever breaking audit trails or compliance requirements.
-This pattern taught me that the hardest part is not the new code; it's keeping the old system alive and trustworthy while you change it.
 
 #### MySQL [mysql]
-Related items:
-- Patterns: data-pipelines
-- Tags: php; laravel
-- External Links: [Wikipedia - MySQL](https://en.wikipedia.org/wiki/MySQL); [MySQL Docs](https://dev.mysql.com/doc/)
-
 Where truth is stored, approximated, and occasionally negotiated.
 
-Designed and maintained relational data models in systems where consistency, performance, and historical traceability are critical.
-Worked with real-world data inconsistencies, migrations, and synchronization challenges across distributed systems.
 
 #### Constraint-aware Navigation [navigation]
-Related items:
-- Tags: react; vue; typescript
-- External Links: [Wikipedia - Information Architecture](https://en.wikipedia.org/wiki/Information_architecture)
-
 Guiding users through combinatorial or high-variability spaces.
 
-I've built interfaces that let non-technical users move safely through spaces with enormous combinatorial complexity: from a furniture configurator with ~10^1851 valid combinations to guided workforce onboarding and approval flows at Ordio.
-These are not simple forms; they are constraint-aware navigation systems that prevent invalid states while staying intuitive and fast.
 
 #### Neos CMS [neos-cms]
-Related items:
-- Patterns: legacy-modernization
-- Tags: php; html
-- External Links: [Neos CMS](https://www.neos.io/)
-
 Content systems where structure meets editorial reality.
 
-Worked with Neos CMS in client projects where content, layout, and business logic intersect in non-trivial ways.
-Focused on adapting structured systems to editorial workflows without breaking consistency or flexibility.
 
 #### PHP [php]
-Related items:
-- Patterns: legacy-modernization; data-pipelines
-- Tags: laravel; symfony; mysql
-- External Links: [Wikipedia - PHP](https://en.wikipedia.org/wiki/PHP); [PHP Official Docs](https://www.php.net/)
-
 Where messy business logic meets long-lived systems.
 
-I've spent most of my career working in PHP across monoliths, APIs, and evolving architectures, often in systems that could not be rewritten but had to be improved under real constraints.
-My focus is not just writing PHP, but stabilizing and extending systems where correctness, backward compatibility, and incremental change matter more than ideal architecture.
 
 #### Physical-to-Digital Feedback Loops [physical-to-digital]
-Related items:
-- Patterns: time-sensitive
-- Tags: iot; embedded
-- External Links: [Wikipedia - Cyber-Physical System](https://en.wikipedia.org/wiki/Cyber-physical_system)
-
 Bridging sensors, manual fieldwork, and formal records where reality itself is the source of truth.
 
-From on-site archaeological documentation at Archbau to warehouse picker/packer tools at WebShippy and my early ESP32/RFID experiments, I've repeatedly closed the loop where the physical world (measurements, sensors, manual steps) becomes structured, verifiable digital records.
-These loops are unforgiving (errors in reality are irreversible) so the feedback mechanisms must be immediate, observable, and resilient to the messiness of the real world.
 
 #### React [react]
-Related items:
-- Patterns: navigation
-- Tags: typescript; javascript
-- External Links: [Wikipedia - React](https://en.wikipedia.org/wiki/React_(software)); [React Docs](https://react.dev/)
-
 Interfaces for navigating complex systems.
 
-Built React-based interfaces for operational tools and client-facing systems, focusing on clarity in high-variability workflows.
-Emphasis on translating complex backend processes into understandable user interactions rather than purely visual components.
 
 #### Symfony [symfony]
-Related items:
-- Patterns: legacy-modernization
-- Tags: php
-- External Links: [Wikipedia - Symfony](https://en.wikipedia.org/wiki/Symfony); [Symfony Docs](https://symfony.com/doc)
-
 Structured foundations in complex environments.
 
-Worked with Symfony in systems requiring strong architectural boundaries and long-term maintainability.
-Used in contexts where explicit configuration and modularity are preferred over convention.
 
 #### System Administration [system-administration]
-Related items:
-- Patterns: external-dependencies
-- Tags: aws; azure
-- External Links: [Wikipedia - System Administration](https://en.wikipedia.org/wiki/System_administration)
-
 Keeping the lights on when the abstractions break.
 
-Managed servers, deployments, and operational infrastructure across production environments.
-From emergency hotfixes at 3 AM to designing resilient systems that don't need middle-of-the-night attention.
 
 #### Time-sensitive Synchronization [time-sensitive]
-Related items:
-- Tags: api; iot
-- External Links: [Wikipedia - Real-time Computing](https://en.wikipedia.org/wiki/Real-time_computing)
-
 Real-time availability, last-minute marketplaces, logistics flows, and irreversible data capture.
 
-I've built and maintained systems where timing is the difference between success and failure: last-minute hotel bookings that must stay consistent across countries and partners, warehouse fulfillment that can't tolerate delays, and archaeological documentation where once a layer is removed the context is gone forever.
-These experiences taught me how to design synchronization layers that gracefully handle incomplete information, asynchronous updates, and real-world volatility without letting downstream processes break.
 
 #### TypeScript [typescript]
-Related items:
-- Patterns: navigation
-- Tags: javascript; react
-- External Links: [Wikipedia - TypeScript](https://en.wikipedia.org/wiki/TypeScript); [TypeScript Docs](https://www.typescriptlang.org/docs/)
-
 Making implicit assumptions visible.
 
-Adopted TypeScript in larger systems to improve maintainability, especially where multiple developers and services interact.
-Used it as a tool to reduce ambiguity in evolving architectures rather than just for type safety.
 
 #### Vue.js [vue]
-Related items:
-- Patterns: navigation
-- Tags: javascript; laravel
-- External Links: [Wikipedia - Vue.js](https://en.wikipedia.org/wiki/Vue.js); [Vue Docs](https://vuejs.org/)
-
 Pragmatic interfaces for fast-moving systems.
 
-Built Vue.js applications in production systems where rapid iteration and clarity were essential.
-Often used in combination with Laravel to create cohesive full-stack solutions.
+
 
 
 -------------------------
