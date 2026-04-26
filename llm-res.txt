@@ -103,7 +103,7 @@ Skills - Where I've Spent the Most Cycles
     - javascript: The glue between intention and interaction.
     - html, css: The structural layer everything else depends on.
   - Infrastructure & Reality Layer:
-    - aws, azure: Infrastructure that scales—until reality interferes.
+    - aws, azure: Infrastructure that scales - until reality interferes.
     - system-administration: Keeping the lights on when the abstractions break.
     - iot, embedded: Bridging code and physical processes.
 languages:
@@ -233,7 +233,7 @@ jobs:
 ### Education & Path
 
 Self-Directed Learner since 2000
-I began with an IT-focused high school and advanced certification, then studied electrical engineering at BME while contributing to Studio Schönherz and the electronics workshop. Over time the path bent toward software — because building and iterating in production felt more honest than theory.
+I began with an IT-focused high school and advanced certification, then studied electrical engineering at BME while contributing to Studio Schönherz and the electronics workshop. Over time the path bent toward software - because building and iterating in production felt more honest than theory.
 The real education, however, happened in the systems I've described above. Every job, every side quest, and every perspective post has been an extension of that same question: how do we design systems that don't snap when reality pushes back?
 
 
