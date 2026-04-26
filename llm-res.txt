@@ -243,7 +243,7 @@ What's Next: Open Experiments
 The same mindset that drives the paid work also fuels my personal projects. These are the places where I test new patterns in the open, before reality has a chance to push back at scale.
 
 #### POST
-- wip: yes
+- wip: no
 - draft: yes
 - slug: esp-6ch-sensor
 - title: 6-Channel Temp Sensor (the failed one)
@@ -262,7 +262,7 @@ Related items:
 
 
 #### POST
-- wip: yes
+- wip: no
 - draft: no
 - slug: esp-cam-live-streaming
 - title: Failed Successfully: ESP32-CAM Live Streaming
@@ -270,20 +270,7 @@ Related items:
 - date: 2026-04-16 10:00:00
 - cta: null
 - content: |
-  I once came across a thread on the Arduino forum where someone was trying to stream live video from an ESP32-CAM directly to YouTube. Another user offered a paid solution.
   
-  That didn't sit right with me. I don't like gatekeeping. On a community forum, knowledge should be shared freely, or at least not locked behind a price tag. So I decided to rebuild the problem from scratch.
-  
-  I started with the official `esp32-camera` component and experimented with different approaches to push the stream out. After many late nights, debugging sessions, and learning the hard limits of the hardware (memory, CPU, Wi-Fi bandwidth, and the camera's own constraints), I got it working.
-  
-  The stream ran.  
-  At a rock-solid **7 frames per second**.
-  
-  It wasn't beautiful. It wasn't smooth. It certainly wasn't “HD live streaming” in any modern sense. But it worked! Exactly as much as the hardware was willing to give. The ESP32-CAM showed me its true boundaries without snapping. No magic library saved the day; just careful, low-level work and acceptance of reality.
-  
-  In the end, I open-sourced the experiment (including the code that got me to those glorious 7 fps) so others wouldn't have to start from zero or pay for basic knowledge.
-  
-  This is a classic **successful failure** in my book. The project didn't deliver what I initially hoped for, but it taught me far more about **time-sensitive synchronization**, **physical-to-digital feedback loops**, and the honest constraints of embedded systems than any smo...
 
 Related items:
 - Patterns: physical-to-digital; time-sensitive
@@ -295,7 +282,7 @@ Related items:
 
 
 #### POST
-- wip: yes
+- wip: no
 - draft: yes
 - slug: esp32-lcd-i2c-example
 - title: ESP32 I2C LCD Example
@@ -315,7 +302,7 @@ Related items:
 
 
 #### POST
-- wip: yes
+- wip: no
 - draft: no
 - slug: laravel-cron-bundle
 - title: Retrospective: Laravel Cron Bundle
@@ -323,20 +310,7 @@ Related items:
 - date: 2026-04-16 14:00:00
 - cta: null
 - content: |
-  **Laravel Cron Bundle** was one of my first proper open-source packages (2017–2019).
   
-  Instead of managing cron jobs in a static crontab or Laravel's `schedule()` method, it let you store every scheduled task in the database, manage them through a clean admin dashboard (`/CronBundle`), and run them reliably with Supervisor (or as a daemon).
-  
-  Key features I shipped:
-  - Full CRUD via Artisan commands and web UI
-  - Run history + change logs
-  - Supervisor-ready worker (`php artisan cron:start --blocking`)
-  - Configurable authentication and user attribution for logs
-  - Zero-dependency on the traditional Linux crontab
-  
-  It was built for real production environments where you need dynamic, auditable, centrally managed background jobs. At the time it was a pretty niche but very practical solution, especially for teams that hated touching server crontabs.
-  
-  Still online on GitHub (8 stars, MIT license). A small but solid example of how I used to solve “infrastructure pain” problems with clean Laravel packages.
 
 Related items:
 - Patterns: legacy-modernization; external-dependencies; time-sensitive
@@ -395,60 +369,7 @@ Related items:
 - date: 2026-04-16 10:00:00
 - cta: null
 - content: |
-  ## 1. Current Status: Pre-Deployment, Waiting for Reality
   
-  WildNode is currently in its most honest phase:  
-  designed, reasoned about, partially assembled... but not yet exposed to the environment it is meant to survive.
-  
-  Core architecture decisions are in place:
-  - ESP32-CAM as the central node
-  - Solar + Li-ion power system (CN3791 + BMS)
-  - SD-based local storage
-  - Offline-first operation model
-  
-  What’s missing is not code.  
-  It’s contact with reality.
-  
-  The next step is physical wiring, enclosure design, and first field deployment.  
-  This is where assumptions about power, stability, and behavior will either hold or collapse.
-  
-  ---
-  
-  ## 2. System Concept: A Persistent, Low-Energy Observer
-  
-  WildNode is designed as a small, autonomous environmental observation unit.
-  
-  Not a high-frequency sensor.  
-  Not a real-time system.  
-  But a *persistent presence*.
-  
-  Its operational loop is intentionally minimal:
-  
-  > wake → capture → measure → store → attempt upload → sleep
-  
-  This cycle defines its identity:
-  - bounded energy usage  
-  - predictable behavior  
-  - independence from infrastructure  
-  
-  The system is built to function:
-  - in forest edges  
-  - along agricultural boundaries  
-  - near roadside ecosystems  
-  - within restoration or rewilding areas  
-  
-  Environments where:
-  - change is slow  
-  - observation is rare  
-  - and context is easily lost  
-  
-  ---
-  
-  ## 3. Cinematic Telemetry: Making Change Visible
-  
-  WildNode is not only a sensing device.
-  
-  It is an attempt to turn environmental data into something *pe...
 
 Related items:
 - Patterns: physical-to-digital; time-sensitive; data-pipelines
@@ -820,7 +741,7 @@ Related items:
   ---
   
   I've learned things that don't fit here.  
-  Shibari is one of them. Don't Google it. Not safe for work.
+  Shibari is one of them. It sounds unrelated at first, but read between the lines, it is the perfect metaphore. Don't Google it. Not safe for work.
   
   Context matters.  
   Consent required.
